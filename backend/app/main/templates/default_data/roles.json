@@ -1,0 +1,17 @@
+[
+    {
+      "uuid":"4f6771b1-87f9-4fb8-9bfd-8edc7d3672da",
+      "title_en": "Administrator",
+      "title_fr": "Administrateur",
+      "description": "",
+      "code": "administrator"
+    },
+    {
+      "uuid":"5f6771b1-87f9-4fb8-9bfd-8edc7d3672db",
+      "title_en": "User",
+      "title_fr": "Utilisateur",
+      "description": "",
+      "code": "user"
+
+    }
+  ]

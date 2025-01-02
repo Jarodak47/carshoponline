@@ -1,0 +1,40 @@
+[
+  {
+    "uuid": "9e950a59-9b9b-4051-8d7b-9c63750aaf19",
+    "email": "mvondofernando7777@gmail.com",
+    "firstname": "fernando",
+    "lastname": "mvondo",
+    "role_uuid": "4f6771b1-87f9-4fb8-9bfd-8edc7d3672da",
+    "added_by_uuid": "9e950a59-9b9b-4051-8d7b-9c63750aafd9",
+    "avatar_uuid": null,
+    "otp": null,
+    "otp_expired_at": null,
+    "otp_password": null,
+    "otp_password_expired_at": null,
+    "password_hash": "test1234",
+    "status": "ACTIVED",
+    "phonenumber": "237698288916",
+    "address": "123 Main St, New York, NY, 10001",
+    "date_added": "2024-07-18 17:41:22.486327",
+    "date_modified": "2024-07-18 17:41:22.486339"
+  },
+  {
+    "uuid": "87950a59-9b9b-4051-8y65b-9c63750aaf19",
+    "email": "test@gmail.com",
+    "firstname": "test",
+    "lastname": "user",
+    "role_uuid": "5f6771b1-87f9-4fb8-9bfd-8edc7d3672db",
+    "added_by_uuid": "9e950a59-9b9b-4051-8d7b-9c63750aafd9",
+    "avatar_uuid": null,
+    "otp": null,
+    "otp_expired_at": null,
+    "otp_password": null,
+    "otp_password_expired_at": null,
+    "password_hash": "test1234",
+    "status": "ACTIVED",
+    "phonenumber": "237698288916",
+    "address": "123 Main St, New York, NY, 10001",
+    "date_added": "2024-07-18 17:41:22.486327",
+    "date_modified": "2024-07-18 17:41:22.486339"
+  }
+]

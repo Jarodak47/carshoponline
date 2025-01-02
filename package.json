@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "axios": "^1.7.9",
+    "braintree-web": "^3.113.0",
+    "dropin": "^0.0.0"
+  }
+}

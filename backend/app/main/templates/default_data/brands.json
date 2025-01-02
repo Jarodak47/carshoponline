@@ -1,0 +1,110 @@
+[
+  {
+    "uuid": "5b9d4da4-1a49-435d-ba91-7e284bd04caa",
+    "name": "LAMBORGHINI",
+    "slug": "lamborghini",
+    "date_added": "2024-12-17 13:02:17.201145",
+    "date_modified": "2024-12-17 13:02:17.201156",
+    "logo_uuid": "cc8326cf-e054-44c7-bae1-6df10ed0efee",
+    "status": "NONE"
+  },
+  {
+    "uuid": "6d6ab7a7-e3df-47fd-be88-cc34611bae0c",
+    "name": "RENAULT",
+    "slug": "renault",
+    "date_added": "2024-12-17 13:02:52.001908",
+    "date_modified": "2024-12-17 13:02:52.001921",
+    "logo_uuid": "ae5ce7fd-ae31-4a61-aec3-8a16b2d18397",
+    "status": "NONE"
+  },
+  {
+    "uuid": "17dac781-ceae-4980-90d9-944feb31146b",
+    "name": "FORD",
+    "slug": "ford",
+    "date_added": "2024-12-17 13:03:15.05008",
+    "date_modified": "2024-12-17 13:03:15.050092",
+    "logo_uuid": "a58e346e-186c-4e80-80b1-d2b4f0fcd793",
+    "status": "NONE"
+  },
+  {
+    "uuid": "51793aaa-0830-454c-8e43-f808c955c807",
+    "name": "BMW",
+    "slug": "bmw",
+    "date_added": "2024-12-17 13:03:33.409974",
+    "date_modified": "2024-12-17 13:03:33.409987",
+    "logo_uuid": "a338ef6b-ca77-41e5-ace6-2b63b47a15b4",
+    "status": "NONE"
+  },
+  {
+    "uuid": "19fba04a-69a8-4766-a783-7b69ac01d325",
+    "name": "CHEVROLET",
+    "slug": "chevrolet",
+    "date_added": "2024-12-17 13:07:03.497726",
+    "date_modified": "2024-12-17 13:07:03.497738",
+    "logo_uuid": "0500da11-c18b-4649-ad80-459baa40d01e",
+    "status": "NONE"
+  },
+  {
+    "uuid": "e6b09af4-51c4-44c2-81a7-121c380cfd07",
+    "name": "LAND ROVER",
+    "slug": "land-rover",
+    "date_added": "2024-12-17 13:07:23.010225",
+    "date_modified": "2024-12-17 13:07:23.010235",
+    "logo_uuid": "1fe54c64-7aca-42e2-8001-79af46bb1a5e",
+    "status": "NONE"
+  },
+  {
+    "uuid": "643bb9d0-8bfc-4eb7-8236-df24b58d750f",
+    "name": "WOLFSWAGEN",
+    "slug": "wolfswagen",
+    "date_added": "2024-12-17 13:01:42.800798",
+    "date_modified": "2024-12-20 09:59:16.280568",
+    "logo_uuid": "f111961d-baf4-477e-af12-04587086175c",
+    "status": "DELETED"
+  },
+  {
+    "uuid": "d6e6d650-9e00-405c-a168-f505869ff17a",
+    "name": "TOYOTA",
+    "slug": "toyota",
+    "date_added": "2024-12-17 13:01:52.365008",
+    "date_modified": "2024-12-20 10:06:43.520594",
+    "logo_uuid": "6057fc97-d5b9-4ec9-a07b-94c6804b5c36",
+    "status": "NONE"
+  },
+  {
+    "uuid": "49f61973-7910-42b0-bf1f-972df46cfb65",
+    "name": "OPEL",
+    "slug": "opel",
+    "date_added": "2024-12-17 13:03:56.560532",
+    "date_modified": "2024-12-20 10:24:12.986431",
+    "logo_uuid": "8d7ad1df-b074-4f85-bcb2-380057bf6ce8",
+    "status": "DELETED"
+  },
+  {
+    "uuid": "92add5bc-371d-476e-8c56-430ff68d76a8",
+    "name": "MERCEDES\n",
+    "slug": "mercedes",
+    "date_added": "2024-12-17 13:04:41.012575",
+    "date_modified": "2024-12-20 10:25:45.760096",
+    "logo_uuid": "53fccd38-ce5d-49bd-9442-bee90e4ac181",
+    "status": "DELETED"
+  },
+  {
+    "uuid": "2dc42729-18be-474e-9af3-a06b7f1cd996",
+    "name": "war machine",
+    "slug": "war-machine",
+    "date_added": "2024-12-21 15:21:48.379696",
+    "date_modified": "2024-12-21 15:21:48.379715",
+    "logo_uuid": "f4d25616-b6b0-4944-ae09-b6b1b36c966b",
+    "status": "NONE"
+  },
+  {
+    "uuid": "a450b26a-9068-42a2-9a72-f72f52f111db",
+    "name": "RENAULT CLIO",
+    "slug": "renault-clio",
+    "date_added": "2024-12-21 15:31:27.118837",
+    "date_modified": "2024-12-21 15:32:26.431373",
+    "logo_uuid": "3d3b303d-b339-4053-b266-6097fd8581b3",
+    "status": "DELETED"
+  }
+]
