@@ -1,46 +1,49 @@
 pipeline {
     agent any
-    environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub_credentials')
-    }
-    triggers {
-        // Déclencher le pipeline sur un push ou une merge request sur la branche main
-        pollSCM('H/5 * * * *')
+    options {
+        skipStagesAfterUnstable()
     }
     stages {
         stage('Cloner le dépôt') {
             steps {
-                git branch:'main',url: 'https://github.com/votre-utilisateur/votre-repo.git'
+                script {
+                    sh 'printenv'
+                    echo 'Pulling the repository...' + env.BRANCH_NAME
+                    checkout scm
+                }
             }
         }
         stage('Construire les images Docker') {
             steps {
                 script {
-                    sh 'docker-compose build'
+                    if (env.BRANCH_NAME == 'main') {
+                        app = docker.build("registry.gitlab.com/jarodak47/carshoponline:latest")
+                    }else {
+                        app = docker.build("registry.gitlab.com/jarodak47/carshoponline:${env.BRANCH_NAME}")
+                    }
                 }
             }
         }
-        stage('Pousser les images sur Docker Hub') {
+        stage('Test') {
             steps {
                 script {
-                    sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
-                    sh 'docker-compose push'
+                    echo 'Testing the application...'
                 }
             }
         }
         stage('Déployer les services') {
             steps {
                 script {
-                    sh 'docker-compose up -d'
+                    docker.withRegistry('https://registry.gitlab.com/jarodak47/carshoponline', 'gitlab-credentials') {
+                        if (env.BRANCH_NAME == 'main') {
+                            app.push('latest')
+                        } else {
+                            app.push(env.BRANCH_NAME)
+                        }
+                    }
                 }
             }
         }
     }
-    post {
-        always {
-            sh 'docker logout'
-             // Nettoyer les images Docker locales pour libérer de l'espace
-            sh 'docker system prune -f'
-        }
-    }
+
 }
