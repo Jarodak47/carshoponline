@@ -1,0 +1,46 @@
+pipeline {
+    agent any
+    environment {
+        DOCKERHUB_CREDENTIALS = credentials('dockerhub_credentials')
+    }
+    triggers {
+        // Déclencher le pipeline sur un push ou une merge request sur la branche main
+        pollSCM('H/5 * * * *')
+    }
+    stages {
+        stage('Cloner le dépôt') {
+            steps {
+                git branch:'main',url: 'https://github.com/votre-utilisateur/votre-repo.git'
+            }
+        }
+        stage('Construire les images Docker') {
+            steps {
+                script {
+                    sh 'docker-compose build'
+                }
+            }
+        }
+        stage('Pousser les images sur Docker Hub') {
+            steps {
+                script {
+                    sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+                    sh 'docker-compose push'
+                }
+            }
+        }
+        stage('Déployer les services') {
+            steps {
+                script {
+                    sh 'docker-compose up -d'
+                }
+            }
+        }
+    }
+    post {
+        always {
+            sh 'docker logout'
+             // Nettoyer les images Docker locales pour libérer de l'espace
+            sh 'docker system prune -f'
+        }
+    }
+}
